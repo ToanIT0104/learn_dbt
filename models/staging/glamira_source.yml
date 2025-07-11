@@ -1,0 +1,124 @@
+version: 2
+
+sources:
+  - name: raw_glamira
+    database: silicon-reason-459214-a7
+    schema: COUNTLY
+    tables: 
+      - name: summary
+        identifier: summary
+        columns:
+          - name: time_stamp
+            data_type: INTEGER
+          - name: ip
+            data_type: STRING
+          - name: user_agent
+            data_type: STRING
+          - name: resolution
+            data_type: STRING
+          - name: user_id_db
+            data_type: STRING
+          - name: device_id
+            data_type: STRING
+          - name: api_version
+            data_type: STRING
+          - name: store_id
+            data_type: STRING
+          - name: local_time
+            data_type: STRING
+          - name: show_recommendation
+            data_type: STRING
+          - name: current_url
+            data_type: STRING
+          - name: referrer_url
+            data_type: STRING
+          - name: email_address
+            data_type: STRING
+          - name: recommendation
+            data_type: BOOLEAN
+          - name: utm_source
+            data_type: BOOLEAN
+          - name: utm_medium
+            data_type: BOOLEAN
+          - name: collection
+            data_type: STRING
+          - name: key_search
+            data_type: STRING
+          - name: product_id
+            data_type: STRING
+          - name: option
+            data_type: ARRAY<STRUCT<
+              option_label STRING,
+              option_id STRING,
+              value_label STRING,
+              value_id STRING,
+              quality STRING,
+              quality_label STRING,
+              alloy STRING,
+              diamond STRING,
+              shapediamond STRING,
+              stone STRING,
+              pearlcolor STRING,
+              finish STRING,
+              price STRING,
+              category_id STRING,
+              kollektion STRING,
+              kollektion_id STRING>>
+          - name: cat_id
+            data_type: STRING
+          - name: collect_id
+            data_type: STRING
+          - name: order_id
+            data_type: INTEGER
+          - name: price
+            data_type: STRING
+          - name: currency
+            data_type: STRING
+          - name: is_paypal
+            data_type: BOOLEAN
+          - name: cart_products
+            data_type: ARRAY<STRUCT<
+              product_id INTEGER,
+              price STRING,
+              currency STRING,
+              amount INTEGER,
+              option ARRAY<STRUCT<
+                option_id INTEGER,
+                option_label STRING,
+                value_id INTEGER,
+                value_label STRING>>
+              >> 
+          - name: viewing_product_id
+            data_type: STRING
+          - name: recommendation_product_id
+            data_type: STRING
+          - name: recommendation_product_position
+            data_type: INTEGER
+          - name: recommendation_clicked_position
+            data_type: INTEGER
+      
+
+      - name: location
+        identifier: location
+        columns:
+          - name: _id
+            data_type: STRING
+          - name: country
+            data_type: STRING
+          - name: ip
+            data_type: STRING
+          - name: region
+            data_type: STRING
+          - name: city
+            data_type: STRING
+
+      - name: products
+        identifier: products
+        columns:
+          - name: product_id
+            data_type: INTEGER
+          - name: product_name
+            data_type: STRING
+          - name: current_url
+            data_type: STRING
+
