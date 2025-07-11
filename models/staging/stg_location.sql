@@ -35,3 +35,4 @@ stg_dim_location__handle_invalid AS (
 
 SELECT * FROM stg_dim_location__handle_invalid
 
+

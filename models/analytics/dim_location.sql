@@ -6,7 +6,7 @@ with dim_location__source AS (
     SELECT *
     FROM {{ref ("stg_location") }}  AS dim_location
 )
-
+ 
 ,dim_location__null_handle AS (
 SELECT
     location_id,

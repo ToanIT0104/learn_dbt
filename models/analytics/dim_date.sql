@@ -26,3 +26,4 @@ SELECT
   EXTRACT(YEAR FROM date_key) AS year_number
 FROM date_range
 ORDER BY date_key
+

@@ -66,3 +66,4 @@ SELECT
 
 SELECT *
 FROM fact_checkout_success__undefined_value
+

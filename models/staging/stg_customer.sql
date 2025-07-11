@@ -68,3 +68,4 @@ stg_customer__final AS (
 )
 
 SELECT * FROM stg_customer__final
+

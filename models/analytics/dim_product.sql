@@ -66,3 +66,4 @@ dim_product__handle_nulls AS (
 )
 
 SELECT * FROM dim_product__undefined_value
+

@@ -41,4 +41,5 @@ stg_customer__undefined_value AS (
     'XNA' AS resolution
 )
 
+
 SELECT * FROM stg_customer__undefined_value
